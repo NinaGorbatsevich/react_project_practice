@@ -1,0 +1,90 @@
+.cover {
+  background: url('../../../../img/cover.png') 50%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.cover button {
+  float: right;
+  margin: 20px;
+  padding: 6px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #868181ab;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #494646a9;
+    transition: 0.3s;
+  }
+}
+
+.cover a {
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+/***********************************/
+
+.settingsWrapper {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.settingsWrapper a {
+  background-color: #f5eee586;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #dbd3c8a2;
+    transition: 0.3s;
+  }
+}
+
+.settingsWrapper img {
+  position: absolute;
+  width: 200px;
+  left: 30px;
+  bottom: 15px;
+  border: 5px solid white;
+  border-radius: 8px;
+}
+
+/********************************/
+
+.photo {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+}
+
+.newPhoto {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.addPhoto {
+  color: rgb(248, 139, 37);
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

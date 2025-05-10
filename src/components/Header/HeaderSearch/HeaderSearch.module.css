@@ -1,0 +1,10 @@
+.search input{
+  border: none;
+  border-radius: 10px;
+  padding: 6px 20px;
+  background-color: #f5eee586;
+
+  &:focus {
+    border-color: #f5eee586;
+  }
+}
