@@ -1,6 +1,6 @@
 import s from './Main.module.css';
 import { Routes, Route } from 'react-router-dom';
-import Messages from '../Header/HeaderMenu/Messages/Messages';
+import MessagesPage from '../Header/HeaderMenu/MessagesPage/MessagesPage';
 
 import Profile from '../Navbar/Navigation/Profile/Profile';
 import Feed from '../Navbar/Navigation/Feed/Feed';
@@ -13,14 +13,14 @@ function Main() {
   return (
     <div className={s.main}>
       <Routes>
-        <Route path="/messages" element={<Messages />} />
+        <Route path="messages/*" element={<MessagesPage />} />
 
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/feed" element={<Feed />} />
-        <Route path="/groups" element={<Groups />} />
-        <Route path="/friends" element={<Friends />} />
-        <Route path="/photo" element={<Photo />} />
-        <Route path="/games" element={<Games />} />
+        <Route path="profile/" element={<Profile />} />
+        <Route path="feed/" element={<Feed />} />
+        <Route path="groups/" element={<Groups />} />
+        <Route path="friends/" element={<Friends />} />
+        <Route path="photo/" element={<Photo />} />
+        <Route path="games/" element={<Games />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,27 @@
+.messages {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  height: calc(100vh - 70px);
+  text-align: center;
+}
+
+.contacts {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d6d4d4;
+}
+
+.chatList {
+  width: 250px;
+  border-right: 1px solid #d6d4d4;
+}
+
+.chat {
+  width: 100%;
+}
+
+.chat p {
+  border-bottom: 1px solid #d6d4d4;
+  padding-bottom: 20px;
+}

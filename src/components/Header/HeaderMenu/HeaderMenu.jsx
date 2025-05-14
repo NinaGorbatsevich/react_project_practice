@@ -3,33 +3,26 @@ import { NavLink } from "react-router-dom";
 
 const navActive = ({ isActive }) => (isActive ? s.active : s.item);
 
+function MenuItem(props) {
+  return (
+    <>
+      <NavLink to={"/" + props.path} className={navActive}>{props.title}
+        <img alt="" />
+      </NavLink>
+    </>
+  )
+}
+
 function HeaderMenu() {
   return (
     <div className={s.menu} path="/messages">
-      <NavLink to="/messages" className={navActive}>messages
-        <img alt="" />
-      </NavLink>
-      <a href="">discussions
-        <img src="" alt="" />
-      </a>
-      <a href="">notifications
-        <img src="" alt="" />
-      </a>
-      <a href="">guests
-        <img src="" alt="" />
-      </a>
-      <a href="">likes
-        <img src="" alt="" />
-      </a>
-      <a href="">video
-        <img src="" alt="" />
-      </a>
-      <a href="">audio
-        <img src="" alt="" />
-      </a>
-      <a href="">calendar
-        <img src="" alt="" />
-      </a>
+      <MenuItem title='message' path='messages'/>
+      <MenuItem title='guest' path='guest'/>
+      <MenuItem title='likes' path='likes'/>
+      <MenuItem title='video' path='video'/>
+      <MenuItem title='audio' path='audio'/>
+      <MenuItem title='calendar' path='calendar'/>
+      
     </div>
   )
 }
